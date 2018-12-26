@@ -67,7 +67,9 @@ public:
 	 *
 	 * \return
 	 */
-	bool is_jwt();
+	jose::alg getAlg() {
+		return alg_;
+	};
 
 	/**
 	 * \brief
